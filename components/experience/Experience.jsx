@@ -16,7 +16,7 @@ const Experience = () => {
 
     return (
         <div>
-            <div className="px-2 sm:px-5 md:px-10 lg:px-20 xl:px-64 rounded">
+            <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] rounded">
                 <h2 className="text-3xl font-bold ">Experience</h2>
                 <div className="flex mt-5 gap-5 overflow-scroll">
                     <ExperienceBox name={'Learning'} setExperience={setExperience} experience={experience} />
@@ -26,7 +26,7 @@ const Experience = () => {
                 </div>
             </div>
 
-            <div className="px-2 sm:px-5 md:px-10 lg:px-20 xl:px-64 mb-20 rounded font-serif py-5 bg-[#2B2B2B]">
+            <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] mb-20 rounded font-serif py-5 bg-[#2b2b2b4d]">
                 <p className="text-justify">
                     {experiences[experience]}
                 </p>
@@ -49,7 +49,7 @@ export default Experience;
 
 function ExperienceBox({name, setExperience, experience}) {
     return(
-        <div onClick={()=>{setExperience(name)}} className={` px-4 sm:px-8 py-2 rounded-t-md  hover:bg-[#2b2b2b71] ${name==experience?"bg-[#2B2B2B]":""}`}>
+        <div onClick={()=>{setExperience(name)}} className={` px-4 sm:px-8 py-2 rounded-t-md  hover:bg-[#2b2b2b4d71] ${name==experience?"bg-[#2b2b2b4d]":""}`}>
         <p>{name}</p>
         </div>
     )

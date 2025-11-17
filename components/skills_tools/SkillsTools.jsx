@@ -33,7 +33,7 @@ export default SkillsTools;
 const SkillsToolsBox = ({filename, custom, onclick, name, skill}) => {
 
     return ( 
-        <div onClick={()=>{onclick(name)}} style={{...custom}} className={`w-3/12 sm:w-3/12 md:w-2/12 lg:w-2/12 transition-all ${name==skill?"bg-[#2B2B2B] rounded-t-md -mb-3 mt-3":""}  aspect-square mx-2 p-4 flex justify-center items-center active:m-0 active:bg-[#1d1d1d] md:${custom? custom: ''}`}>
+        <div onClick={()=>{onclick(name)}} style={{...custom}} className={`w-3/12 sm:w-3/12 md:w-2/12 lg:w-2/12 transition-all ${name==skill?"bg-[#2b2b2b4d] rounded-t-md -mb-3 mt-3":""}  aspect-square mx-2 p-4 flex justify-center items-center active:m-0 active:bg-[#1d1d1d] md:${custom? custom: ''}`}>
             <img src={`./imgs/skills_tools/${filename}`} width={"80%"}  alt=""   />
         </div>
      );

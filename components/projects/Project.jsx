@@ -41,9 +41,9 @@ const Projects = () => {
       
 
     return ( <>
-            <h2 className="text-3xl font-bold  py-5 px-2 sm:px-5 md:px-10 lg:px-20 xl:px-64 ">Projects</h2>
+            <h2 className="text-3xl font-bold  py-5 px-2 sm:px-5 md:px-10 lg:px-[20%] ">Projects</h2>
    
-        <div className="bg-[#2B2B2B] py-5 px-2 sm:px-5 md:px-10 lg:px-20 xl:px-64 mb-5 ">
+        <div className="bg-[#2b2b2b4d] py-5 px-2 sm:px-5 md:px-10 lg:px-[20%] mb-5 ">
 
 
                                         <Carousel  className="w-full ">

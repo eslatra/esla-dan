@@ -20,12 +20,12 @@ const index = () => {
 
       </Head>
 
-    <div className="px-2 sm:px-5 md:px-10 lg:px-20 xl:px-64 relative">
-      <div className="absolute w-full h-full left-0  bg-[url('/imgs/bg-icons.svg')] bg-blend-multiply  -z-10 bg-[#000000b4]"></div>
+    <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] relative">
+      <div className="absolute w-full h-full left-0  bg-[url('/imgs/bg-icons.svg')] bg-blend-multiply  -z-10 bg-[#00000065]"></div>
       <Top/>
       <Index/>
     </div>
-    <div className="px-2 sm:px-5 md:px-10 lg:px-20 xl:px-64 rounded bg-[#2B2B2B] ">
+    <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] rounded bg-[#2b2b2b4d] ">
     <About/>
   </div>
 <SkillsTools/>
