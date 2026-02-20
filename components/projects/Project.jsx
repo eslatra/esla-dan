@@ -41,9 +41,13 @@ const Projects = () => {
       
 
     return ( <>
-            <h2 className="text-3xl font-bold  py-5 px-2 sm:px-5 md:px-10 lg:px-[20%] ">Projects</h2>
+            <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] py-8">
+                <div className="mb-6 pb-4 tech-border-bottom">
+                    <h2 className="text-xl md:text-2xl font-bold glow-cyan font-mono tracking-widest">≈ PROJECTS</h2>
+                </div>
+            </div>
    
-        <div className="bg-[#2b2b2b4d] py-5 px-2 sm:px-5 md:px-10 lg:px-[20%] mb-5 ">
+        <div className="border-y-2 border-cyan-500 py-8 px-2 sm:px-5 md:px-10 lg:px-[20%] mb-5 font-mono">
 
 
                                         <Carousel  className="w-full ">
@@ -57,10 +61,10 @@ const Projects = () => {
 
                 </div>
                 <div className="flex flex-col justify-center">
-                    <h3 className="text-2xl">{product.name}</h3>
+                    <h3 className="text-2xl font-mono glow-cyan">{product.name}</h3>
                     <div className="flex gap-2 flex-wrap my-2">  {product.tags.map((tag, index)=>{
                         return(
-                            <p className="text-xs font-sans rounded-full text-nowrap bg-gray-500 text-white px-2 py-1" key={index}>{tag}</p>
+                            <p className="text-xs font-mono rounded text-nowrap bg-cyan-900 text-cyan-200 px-2 py-1 border border-cyan-500" key={index}>{tag}</p>
                         )
                     })}</div>
                     {/* <div className="icons mt-1 flex gap-2">
@@ -82,13 +86,16 @@ const Projects = () => {
             </div>
             </div>
 
-            <div className=" py-5 font-serif text-justify">
+            <div className="py-5 font-mono text-sm md:text-base text-justify text-cyan-100">
               {product.description}
             </div>
             <div className="">
                 {product.website?
                 <a className="w-full flex" target="_" href={product.website}>
-            <button className=" border w-1/5 m-auto mr-0 rounded-full py-2 my-5 font-sans border-white hover:[bg-white] hover:[text-black]">Visit</button></a>
+                    <button className="border-2 border-cyan-500 px-6 py-2 my-5 font-mono text-cyan-300 hover:bg-cyan-500 hover:text-black transition m-auto mr-0 glow-text">
+                        [VISIT_PROJECT]
+                    </button>
+                </a>
                 :<></>}
                
 </div>
@@ -104,8 +111,8 @@ const Projects = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="bg-gray-700 hidden md:flex" />
-      <CarouselNext className="bg-gray-700 hidden md:flex"/>
+      <CarouselPrevious className="bg-cyan-600 hover:bg-cyan-500 text-black hidden md:flex border-2 border-cyan-500" />
+      <CarouselNext className="bg-cyan-600 hover:bg-cyan-500 text-black hidden md:flex border-2 border-cyan-500"/>
     </Carousel>
         </div>
          </>

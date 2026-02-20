@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			mono: ['IBM Plex Mono', 'monospace'],
+  			tech: ['IBM Plex Mono', 'monospace'],
+  		},
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
   			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
@@ -57,6 +61,19 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			/* Cyberpunk colors */
+  			cyan: {
+  				50: '#f0ffff',
+  				100: '#cfffff',
+  				200: '#a0ffff',
+  				300: '#5fffff',
+  				400: '#1fffff',
+  				500: '#00d9ff',
+  				600: '#00b8cc',
+  				700: '#0088aa',
+  				800: '#005577',
+  				900: '#002d44',
   			}
   		}
   	}

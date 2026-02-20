@@ -4,8 +4,10 @@ const SkillsTools = ({skill, setSkill}) => {
         setSkill(params)
     }
     return (  
-        <div className="relative py-10 pb-0 ">
-            <h2 className="text-3xl font-bold mb-2">Skills & Tools</h2>
+        <div className="relative py-10 pb-0 px-2 sm:px-5 md:px-10 lg:px-[20%]">
+            <div className="mb-6 pb-4 tech-border-bottom">
+                <h2 className="text-xl md:text-2xl font-bold glow-cyan font-mono tracking-widest">≈ SKILLS & TOOLS</h2>
+            </div>
             <div className="relative md:w-[105%]">
 
           
@@ -33,8 +35,8 @@ export default SkillsTools;
 const SkillsToolsBox = ({filename, custom, onclick, name, skill}) => {
 
     return ( 
-        <div onClick={()=>{onclick(name)}} style={{...custom}} className={`w-3/12 sm:w-3/12 md:w-2/12 lg:w-2/12 transition-all ${name==skill?"bg-[#2b2b2b4d] rounded-t-md -mb-3 mt-3":""}  aspect-square mx-2 p-4 flex justify-center items-center active:m-0 active:bg-[#1d1d1d] md:${custom? custom: ''}`}>
-            <img src={`./imgs/skills_tools/${filename}`} width={"80%"}  alt=""   />
+        <div onClick={()=>{onclick(name)}} style={{...custom}} className={`w-3/12 sm:w-3/12 md:w-2/12 lg:w-2/12 transition-all aspect-square mx-2 p-4 flex justify-center items-center cursor-pointer ${name==skill?"border-2 border-cyan-400 bg-cyan-900 bg-opacity-30 rounded -mb-3 mt-3 glow-text":"border border-cyan-600 hover:border-cyan-400 bg-cyan-900 bg-opacity-10"} md:${custom? custom: ''}`}>
+            <img src={`./imgs/skills_tools/${filename}`} width={"80%"}  alt="" className="hover:scale-110 transition"   />
         </div>
      );
 }
