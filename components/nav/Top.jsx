@@ -5,24 +5,62 @@ const Top = () => {
     const [MobileNav, setMoblieNav] = useState(false)
 
     return (
-        <div className=" py-5 flex justify-between top-0 bg-gradient-to-b  fromj-black">
-            <div className="contact ">
-                <a href="#contacts"> <button className=" border border-gray-100 px-8 py-1 text-white  rounded-3xl hover:bg-white hover:text-blue-600">Contact</button></a>
+        <div className="py-6 flex justify-between items-center top-0 bg-black border-b-2 border-cyan-500 font-mono text-cyan-400">
+            <div className="contact">
+                <a href="#contacts"> 
+                    <button className="border-2 border-cyan-500 px-6 md:px-8 py-2 text-cyan-300 hover:bg-cyan-500 hover:text-black transition font-mono text-sm md:text-base glow-text">
+                        CONTACT
+                    </button>
+                </a>
             </div>
 
             <div className="w-6/12 relative">
                 <div className="flex justify-end items-center z-50 absolute right-0 sm:hidden">
                     {!MobileNav?
-                    <svg onClick={()=>{setMoblieNav(true), document.querySelector('body').style.overflowY="hidden"}} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
-                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" ><g transform="scale(3.2,3.2)"><path d="M14,14c-3.30162,0 -6,2.69837 -6,6c0,3.30163 2.69838,6 6,6h52c3.30163,0 6,-2.69837 6,-6c0,-3.30163 -2.69837,-6 -6,-6zM14,16h52c1.53782,0 2.84937,0.86249 3.51953,2.125c-0.39841,0.22043 -0.59761,0.68216 -0.48459,1.12324c0.11302,0.44107 0.50974,0.75011 0.96506,0.75176c0,2.22038 -1.77962,4 -4,4h-52c-2.22038,0 -4,-1.77962 -4,-4c0.45568,-0.00077 0.85321,-0.30951 0.96676,-0.75082c0.11355,-0.44131 -0.08561,-0.90357 -0.48434,-1.12418c0.6703,-1.26206 1.98009,-2.125 3.51758,-2.125zM14,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM18,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM22,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM26,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM30,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM34,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM38,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM42,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM46,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM50,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM54,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM58,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM62,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM66,18c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM14,34c-3.30162,0 -6,2.69837 -6,6c0,3.30163 2.69838,6 6,6h52c3.30163,0 6,-2.69837 6,-6c0,-3.30163 -2.69837,-6 -6,-6zM14,36h52c1.53782,0 2.84937,0.86249 3.51953,2.125c-0.39841,0.22043 -0.59761,0.68216 -0.48459,1.12324c0.11302,0.44107 0.50974,0.75011 0.96506,0.75176c0,2.22037 -1.77962,4 -4,4h-52c-2.22038,0 -4,-1.77963 -4,-4c0.45568,-0.00077 0.85321,-0.30951 0.96676,-0.75082c0.11355,-0.44131 -0.08561,-0.90357 -0.48434,-1.12418c0.6703,-1.26206 1.98009,-2.125 3.51758,-2.125zM14,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM18,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM22,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM26,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM30,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM34,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM38,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM42,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM46,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM50,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM54,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM58,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM62,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM66,38c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM14,54c-3.30162,0 -6,2.69837 -6,6c0,3.30163 2.69838,6 6,6h52c3.30163,0 6,-2.69837 6,-6c0,-3.30163 -2.69837,-6 -6,-6zM14,56h52c1.53782,0 2.84937,0.86249 3.51953,2.125c-0.39841,0.22043 -0.59761,0.68216 -0.48459,1.12324c0.11302,0.44107 0.50974,0.75011 0.96506,0.75176c0,2.22037 -1.77962,4 -4,4h-52c-2.22038,0 -4,-1.77963 -4,-4c0.45568,-0.00077 0.85321,-0.30951 0.96676,-0.75082c0.11355,-0.44131 -0.08561,-0.90357 -0.48434,-1.12418c0.6703,-1.26206 1.98009,-2.125 3.51758,-2.125zM14,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM18,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM22,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM26,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM30,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM34,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM38,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM42,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM46,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM50,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM54,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM58,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM62,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM66,58c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1z"></path></g></g>
-                    </svg>
-                    :                    <svg onClick={()=>{setMoblieNav(false), document.querySelector('body').style.overflowY=""}} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
-<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(5.12,5.12)"><path d="M40.7832,7.27148c-0.52851,0.01247 -1.03058,0.23367 -1.39648,0.61523l-14.33594,14.33594l-14.33594,-14.33594c-0.37669,-0.38827 -0.89458,-0.60741 -1.43555,-0.60742c-0.81437,0.00019 -1.54731,0.49409 -1.85324,1.24881c-0.30592,0.75472 -0.12373,1.61957 0.46066,2.18673l14.33594,14.33594l-14.33594,14.33594c-0.52247,0.50164 -0.73292,1.24653 -0.55021,1.9474c0.18272,0.70087 0.73005,1.24821 1.43093,1.43093c0.70087,0.18272 1.44577,-0.02774 1.9474,-0.55021l14.33594,-14.33594l14.33594,14.33594c0.50164,0.52247 1.24653,0.73293 1.94741,0.55021c0.70088,-0.18272 1.24821,-0.73005 1.43093,-1.43093c0.18272,-0.70088 -0.02774,-1.44577 -0.55021,-1.94741l-14.33594,-14.33594l14.33594,-14.33594c0.59567,-0.57119 0.77939,-1.44958 0.46256,-2.21161c-0.31683,-0.76204 -1.06915,-1.25125 -1.8942,-1.23175z"></path></g></g>
-</svg>}
-                 
-
-
+                    <button onClick={()=>{setMoblieNav(true), document.querySelector('body').style.overflowY="hidden"}} className="text-cyan-400 hover:text-cyan-100 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                    :                    
+                    <button onClick={()=>{setMoblieNav(false), document.querySelector('body').style.overflowY=""}} className="text-cyan-400 hover:text-cyan-100 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    }
                 </div>
+                
+                <div className={`${MobileNav?'flex':'hidden'} fixed bg-black sm:bg-transparent h-[100vh] w-full left-0 top-0 z-30 flex justify-center items-center sm:block sm:static sm:h-fit`}>
+                    <div className="absolute w-full h-full left-0 border-2 border-cyan-500 sm:border-0 bg-[url('/imgs/bg-icons.svg')] bg-blend-multiply -z-10 bg-[#000000b4]"></div>
+                    
+                    <ul className="grid sm:flex sm:gap-2 md:gap-4 sm:justify-end items-center">
+                        <li className="w-full sm:w-auto text-center">
+                            <a onClick={()=>{setMoblieNav(false), document.querySelector('body').style.overflowY=""}} className="text-cyan-300 hover:text-cyan-100 transition text-sm md:text-base font-mono" href="#about">
+                                About
+                            </a>
+                        </li>
+                        <li className="w-full sm:w-auto text-center">
+                            <a onClick={()=>{setMoblieNav(false), document.querySelector('body').style.overflowY=""}} className="text-cyan-300 hover:text-cyan-100 transition text-sm md:text-base font-mono" href="#skill_and_tools">
+                                Skills
+                            </a>
+                        </li>
+                        <li className="w-full sm:w-auto text-center">
+                            <a onClick={()=>{setMoblieNav(false), document.querySelector('body').style.overflowY=""}} className="text-cyan-300 hover:text-cyan-100 transition text-sm md:text-base font-mono" href="#experience">
+                                Experience
+                            </a>
+                        </li>
+                        <li className="w-full sm:w-auto text-center">
+                            <a onClick={()=>{setMoblieNav(false), document.querySelector('body').style.overflowY=""}} className="text-cyan-300 hover:text-cyan-100 transition text-sm md:text-base font-mono" href="#project">
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
                 <div className={`${MobileNav?'flex':'hidden'} fixed bg-black sm:bg-transparent h-[100vh] w-full left-0 top-0 z-30 flex justify-center items-center sm:block sm:static sm:h-fit`}>
                   
       <div className="absolute w-full h-full left-0  bg-[url('/imgs/bg-icons.svg')] bg-blend-multiply  -z-10 bg-[#000000b4]"></div>

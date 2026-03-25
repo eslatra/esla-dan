@@ -15,10 +15,12 @@ const Experience = () => {
       
 
     return (
-        <div>
+        <div className="py-8">
             <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] rounded">
-                <h2 className="text-3xl font-bold ">Experience</h2>
-                <div className="flex mt-5 gap-5 overflow-scroll">
+                <div className="mb-6 pb-4 tech-border-bottom">
+                    <h2 className="text-xl md:text-2xl font-bold glow-cyan font-mono tracking-widest">≈ EXPERIENCE</h2>
+                </div>
+                <div className="flex mt-5 gap-2 md:gap-4 overflow-x-auto pb-2 font-mono">
                     <ExperienceBox name={'Learning'} setExperience={setExperience} experience={experience} />
                     <ExperienceBox name={'Work/Projects'} setExperience={setExperience} experience={experience} />
                     <ExperienceBox name={'Team'} setExperience={setExperience} experience={experience} />
@@ -26,8 +28,8 @@ const Experience = () => {
                 </div>
             </div>
 
-            <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] mb-20 rounded font-serif py-5 bg-[#2b2b2b4d]">
-                <p className="text-justify">
+            <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] mb-20 rounded py-8 font-mono text-cyan-100 border-t-2 border-b-2 border-cyan-500 my-8">
+                <p className="text-sm md:text-base leading-relaxed text-justify">
                     {experiences[experience]}
                 </p>
 
@@ -49,8 +51,8 @@ export default Experience;
 
 function ExperienceBox({name, setExperience, experience}) {
     return(
-        <div onClick={()=>{setExperience(name)}} className={` px-4 sm:px-8 py-2 rounded-t-md  hover:bg-[#2b2b2b4d71] ${name==experience?"bg-[#2b2b2b4d]":""}`}>
-        <p>{name}</p>
+        <div onClick={()=>{setExperience(name)}} className={`px-3 md:px-6 py-3 cursor-pointer transition text-sm md:text-base whitespace-nowrap ${name==experience?"border-b-2 border-cyan-400 text-cyan-300 glow-text":"text-cyan-500 hover:text-cyan-300"}`}>
+            <p>{name}</p>
         </div>
     )
 }
