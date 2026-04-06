@@ -21,12 +21,13 @@ const index = () => {
       </Head>
 
     <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] relative">
-      <div className="absolute w-full h-full left-0 bg-[url('/imgs/bg-icons.svg')] bg-blend-multiply -z-10 bg-[#00000065]"></div>
+      <div className="absolute w-full h-full left-0 bg-[url('/imgs/bg-icons.svg')]  bg-blend-multiply -z-10 bg-[#00000065] opacity-50 pixel-image bg-repeat bg-center ">
+      </div>
       <Top/>
       <Index/>
     </div>
     
-    <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] border-y-2 border-cyan-500 bg-black bg-opacity-40">
+    <div className="px-2  sm:px-5 md:px-10 lg:px-[20%]  md:border-t-2 border-b-2 border-cyan-500 bg-black bg-opacity-40">
       <About/>
     </div>
     
@@ -34,17 +35,17 @@ const index = () => {
       <SkillsTools/>
     </div>
     
-    <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] border-b-2 border-cyan-500" id="experience">
+    <div className="px-2 pt-6 md:pt-0 sm:px-5 md:px-10 lg:px-[20%] border-b-2 border-cyan-500" id="experience">
       <Experience/> 
     </div>
 
-    <div className="px-2 sm:px-5 md:px-10 lg:px-[20%]" id="project">
+    <div className="px-2 pt-6 md:pt-0 sm:px-5 md:px-10 lg:px-[20%]" id="project">
       <Projects/>
     </div>
 
-    <footer className="bg-black border-t-2 border-cyan-500 p-8 mt-0 text-center text-cyan-300 font-mono">
+    <footer className="bg-black border-t-2 border-cyan-500 p-8 mt-0 text-center text-cyan-100 font-mono">
       <p className="text-sm md:text-base">
-        [END_OF_TRANSMISSION] This is not the end, but the beginning of our journey together.
+        This is not the end of transmission, but the beginning of our journey together.
         <br />
         <Link href={'#contacts'} className="text-cyan-400 hover:text-cyan-200 transition">[INITIATE_CONTACT]</Link>
       </p>

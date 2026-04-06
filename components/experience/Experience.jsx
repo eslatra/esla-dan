@@ -15,9 +15,9 @@ const Experience = () => {
       
 
     return (
-        <div className="py-8">
+        <div className="py-8 ">
             <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] rounded">
-                <div className="mb-6 pb-4 tech-border-bottom">
+                <div className="mb-2 pb-2 tech-border-bottom">
                     <h2 className="text-xl md:text-2xl font-bold glow-cyan font-mono tracking-widest">≈ EXPERIENCE</h2>
                 </div>
                 <div className="flex mt-5 gap-2 md:gap-4 overflow-x-auto pb-2 font-mono">

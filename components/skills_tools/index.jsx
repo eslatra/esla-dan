@@ -19,11 +19,11 @@ export default function Index() {
 
   return (
     <div>
-  <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] mt-10  " id="skill_and_tools">
+  <div className="px-2 pt-4 md:pt-0 sm:px-5 md:px-10 lg:px-[20%] mt-10  " id="skill_and_tools">
   <SkillsTools setSkill={setSkill} skill={skill}/>
 
   </div>
-  <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] mb-20 rounded bg-[#2b2b2b4d59]">
+  <div className="px-2 sm:px-5 md:px-10 lg:px-[20%] mb-20 rounded bg-[#2b2b2b4d59] text-cyan-100">
     <InfoBox setSkill={setSkill} skill={skill} skills={skills}/>
   </div>
     </div>
