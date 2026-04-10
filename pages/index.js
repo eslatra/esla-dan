@@ -6,6 +6,7 @@ import Experience from "@/components/experience/Experience";
 import Projects from "@/components/projects/Project";
 import Link from "next/link";
 import Head from 'next/head'
+import { motion } from "framer-motion";
 
 
 const index = () => { 
@@ -27,21 +28,21 @@ const index = () => {
       <Index/>
     </div>
     
-    <div className="px-2  sm:px-5 md:px-10 lg:px-[20%]  md:border-t-2 border-b-2 border-cyan-500 bg-black bg-opacity-40">
+    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.6 }} className="px-2  sm:px-5 md:px-10 lg:px-[20%]  md:border-t-2 border-b-2 border-cyan-500 bg-black bg-opacity-40">
       <About/>
-    </div>
+    </motion.div>
     
-    <div className="border-y-2 border-cyan-500">
+    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.6 }} className="border-y-2 border-cyan-500">
       <SkillsTools/>
-    </div>
+    </motion.div>
     
-    <div className="px-2 pt-6 md:pt-0 sm:px-5 md:px-10 lg:px-[20%] border-b-2 border-cyan-500" id="experience">
+    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.6 }} className="px-2 pt-6 md:pt-0 sm:px-5 md:px-10 lg:px-[20%] border-b-2 border-cyan-500" id="experience">
       <Experience/> 
-    </div>
+    </motion.div>
 
-    <div className="px-2 pt-6 md:pt-0 sm:px-5 md:px-10 lg:px-[20%]" id="project">
+    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.6 }} className="px-2 pt-6 md:pt-0 sm:px-5 md:px-10 lg:px-[20%]" id="project">
       <Projects/>
-    </div>
+    </motion.div>
 
     <footer className="bg-black border-t-2 border-cyan-500 p-8 mt-0 text-center text-cyan-100 font-mono">
       <p className="text-sm md:text-base">

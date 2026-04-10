@@ -1,11 +1,30 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: { staggerChildren: 0.2, delayChildren: 0.1 }
+    }
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+};
 
 const Index = () => (
     <section id="contacts">
-        
-        <div className="pt-14 pb-4 md:py-6 mt-4 text-cyan-500 font-mono">
+
+        <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="pt-14 pb-4 md:py-6 mt-4 text-cyan-500 font-mono"
+        >
             {/* Header Section */}
-            <div className=" mb-4 py-8  tech-border-bottom tech-border-top relative">
+            <motion.div variants={itemVariants} className=" mb-4 py-8  tech-border-bottom tech-border-top relative">
                 <div className="flex  justify-between items-start ">
                     <div>
                         <p className="text-xs md:text-sm tracking-widest text-cyan-400 mb-2 uppercase">Software Engineer</p>
@@ -20,30 +39,32 @@ const Index = () => (
                         <p className="text-xs md:text-sm text-cyan-300">SKILL LVL: █████████</p>
                     </div>
                 </div>
-            </div>
+
+            </motion.div>
 
             {/* Main Content Area */}
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                 {/* Image Section */}
-                <div className="relative flex justify-center lg:justify-start">
-                    <div className="relative w-full max-w-sm">
+                <motion.div variants={itemVariants} className="relative flex justify-center lg:justify-start">
+                    <div className="relative w-full max-w-sm  ">
                         <div className="corner-bracket top-left"></div>
                         <div className="corner-bracket top-right"></div>
                         <div className="corner-bracket bottom-left"></div>
                         <div className="corner-bracket bottom-right"></div>
 
-                        <div className="scanlines m-3">
+                        <div className="scanlines p-3 flex justify-center items-center h-full">
                             <img
                                 src="./imgs/esla.jpeg"
                                 alt="Esla Dankuje"
-                                className="w-full aspect-square object-cover pixel-image border-2 border-cyan-500 " />
+                                className="w-full aspect-square object-cover pixel-image border-2 border-cyan-500 m-auto" />
                         </div>
                     </div>
-                </div>
+                </motion.div>
+
 
                 {/* Bio Section */}
-                <div className="flex flex-col justify-between">
+                <motion.div variants={itemVariants} className="flex flex-col justify-between">
                     <div className="h-full flex flex-col justify-between">
                         <p className="text-sm md:text-base leading-relaxed text-cyan-100 mb-8">
                             Crafting intricate code to shape digital innovation and push boundaries.
@@ -68,7 +89,7 @@ const Index = () => (
                                 [INITIATE_CONTACT]
                             </p>
                             <div className="flex justify-center gap-6 pt-2 ">
-                                <Link  href="https://github.com/esladan" target="_blank" rel="noopener noreferrer" className="text-cyan-400 group flex flex-col relative items-center hover:text-cyan-100 transition">
+                                <Link href="https://github.com/esladan" target="_blank" rel="noopener noreferrer" className="text-cyan-400 group flex flex-col relative items-center hover:text-cyan-100 transition">
                                     <svg className="animate-pulse rounded-full p-1" width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M46 18V30H44V34H42V38H40V40H38V42H36V44H32V46H30V36H28V34H30V32H34V30H36V28H38V18H36V12H32V14H30V16H28V14H20V16H18V14H16V12H12V18H10V28H12V30H14V32H18V36H14V34H12V32H8V34H10V38H12V40H18V46H16V44H12V42H10V40H8V38H6V34H4V30H2V18H4V14H6V10H8V8H10V6H14V4H18V2H30V4H34V6H38V8H40V10H42V14H44V18H46Z" fill="#5FFFFF" />
                                     </svg>
@@ -81,9 +102,9 @@ const Index = () => (
                                     <p className="hidden absolute text-xs text-center top-6 group-hover:block">Email</p>
                                 </Link>
                                 <Link href="tel:+2349154754448" className="text-cyan-400 group flex flex-col relative items-center hover:text-cyan-100 transition">
-                                   <svg className="animate-pulse rounded-full p-1" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 1H11V3H2V1ZM9 3H11V9H9V3ZM7 7H9V11H7V7ZM4 12H6V14H4V12ZM2 3H4V12H2V3ZM9 11H11V13H9V11ZM11 13H13V15H11V13ZM13 15H17V17H13V15ZM15 13H21V15H15V13ZM21 13H23V22H21V13ZM6 14H8V16H6V14ZM8 16H10V18H8V16ZM10 18H12V20H10V18ZM12 20H21V22H12V20Z" fill="#5FFFFF"/>
-</svg>
+                                    <svg className="animate-pulse rounded-full p-1" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 1H11V3H2V1ZM9 3H11V9H9V3ZM7 7H9V11H7V7ZM4 12H6V14H4V12ZM2 3H4V12H2V3ZM9 11H11V13H9V11ZM11 13H13V15H11V13ZM13 15H17V17H13V15ZM15 13H21V15H15V13ZM21 13H23V22H21V13ZM6 14H8V16H6V14ZM8 16H10V18H8V16ZM10 18H12V20H10V18ZM12 20H21V22H12V20Z" fill="#5FFFFF" />
+                                    </svg>
 
                                     <p className="hidden absolute text-xs text-center top-6 group-hover:block">Phone</p>
                                 </Link>
@@ -108,19 +129,20 @@ const Index = () => (
 
                     </div>
 
-                </div>
 
+                </motion.div>
             </div>
+        </motion.div>
 
-            {/* Social Links */}
+        {/* Social Links */}
 
 
-            {/* Tagline */}
-            <div className="flex justify-center">
-                {/* <h1 className="text-2xl sm:text-4xl biggest text-center tracking-tight">BUILDING PRODUCTS ADDING VALUE</h1> */}
-            </div>
+        {/* Tagline */}
+        <div className="flex justify-center">
+            {/* <h1 className="text-2xl sm:text-4xl biggest text-center tracking-tight">BUILDING PRODUCTS ADDING VALUE</h1> */}
         </div>
-    </section>
+
+    </section >
 )
 
 export default Index;
