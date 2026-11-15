@@ -23,8 +23,6 @@ const SkillsTools = ({skill, setSkill}) => {
 
             </div>
              
-            <div className="hidden md:block w-10 h-full bg-gradient-to-r from-[#000000] absolute top-0 md:-left-[60px] shadow-black"></div>
-            <div className="hidden md:block w-10 h-full bg-gradient-to-l from-[#000000] absolute top-0 md:-right-[10px] shadow-black"></div>
  </div>
         </div>
     );

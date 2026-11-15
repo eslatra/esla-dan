@@ -95,7 +95,7 @@ const Index = () => (
                                     </svg>
                                     <p className="hidden absolute text-xs text-center top-6 group-hover:block">Github</p>
                                 </Link>
-                                <Link href="mailto:alsenad390@gmail.com" className="text-cyan-400 group flex flex-col relative items-center hover:text-cyan-100 transition">
+                                <Link href="mailto:esladan4@gmail.com" className="text-cyan-400 group flex flex-col relative items-center hover:text-cyan-100 transition">
                                     <svg className="animate-pulse rounded-full p-1" width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2.18164 10.9094H4.36346V8.72754H43.6362V10.9094H45.818V39.273H43.6362V41.4548H4.36346V39.273H2.18164V10.9094ZM6.54528 37.0912H41.4544V19.6366H39.2726V21.8184H34.9089V24.0003H30.5453V26.1821H26.1816V28.3639H21.818V26.1821H17.4544V24.0003H13.0907V21.8184H8.7271V19.6366H6.54528V37.0912ZM41.4544 13.0912H6.54528V15.273H10.9089V17.4548H15.2726V19.6366H19.6362V21.8184H28.3635V19.6366H32.727１V１７．４５４８Ｈ３７．０９０７Ｖ１５．２７３Ｈ４１．４５４４Ｖ１３．０９１２Ｚ" fill="#5FFFFF" />
                                     </svg>
